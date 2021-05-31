@@ -51,6 +51,6 @@ export default class AutoTyper extends Component {
   }
 
   render() {
-    return <p style={{ color: this.state.curColor }, {display:"inline"}}>{this.state.curText}</p>
+    return <p style={{ color: this.state.curColor , display: "inline"}}>{this.state.curText}</p>
   }
 }
