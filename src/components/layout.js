@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { list, link } from "./layout.module.css"
+import { list, link, footer } from "./layout.module.css"
 import AutoTyper from "./AutoTyper"
 
 const Layout = ({ location, title, children }) => {
@@ -33,15 +33,17 @@ const Layout = ({ location, title, children }) => {
       </nav>
     </div>
   ))
-  let footer = ["GraphQL", "React", "CSS"]
+  let footerText = ["GraphQL", "React", "CSS"]
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer style={{ fontFamily: "Helvetica" }}>
-        Built With
-        <span ><AutoTyper dataText={footer}></AutoTyper></span>
-      </footer>
+      <div className={footer}> 
+        <h6 style={{ display: "inline" }}>
+          Built With {` `}
+          <AutoTyper dataText={footerText}></AutoTyper>
+        </h6>
+      </div>
     </div>
   )
 }

@@ -3,7 +3,7 @@ module.exports = {
     title: `Andrew's Blog`,
     author: {
       name: `Andrew Chen`,
-      summary: `studying in Richmond Hill building interesting things.`,
+      summary: `studying in Richmond Hill and building interesting things.`,
     },
     description: `All of my thoughts about programming and beyond.`,
     siteUrl: `https://basicblog89788.gatsbyjs.io/`,

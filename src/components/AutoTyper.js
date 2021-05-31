@@ -8,26 +8,24 @@ export default class AutoTyper extends Component {
     super(props)
     this.state = {
       curText: "",
-      curColor: "rgba( 74, 77, 105, 50%)",
+      curColor: "rgba( 42, 55, 86, 100%)",
       deleting: false,
       curIndex: 0,
       color: [
-        "rgba( 74, 77, 105, 90%)",
-        "rgba( 153, 139, 152, 90%)",
-        "rgba( 200, 173, 166, 90%)",
-        "rgba( 241, 233, 227, 90%)",
-        "rgba( 34, 33, 59, 90%)",
+        "rgba( 42, 55, 86, 70%)",
+        "rgba( 42, 55, 86, 80%)",
+        "rgba( 42, 55, 86, 100%)",
       ],
     }
   }
 
   componentDidMount() {
-    this.type();
+    this.type()
   }
 
   type = () => {
     const { dataText } = this.props
-    const { deleting, curIndex, curText} = this.state
+    const { deleting, curIndex, curText } = this.state
     const moduloCurText = curIndex % dataText.length
     const currentWord = dataText[moduloCurText]
 
@@ -42,21 +40,17 @@ export default class AutoTyper extends Component {
       setTimeout(() => {
         this.setState({ deleting: true })
       }, 500)
-    } 
-    else if (deleting && curText.length === 0) {
+    } else if (deleting && curText.length === 0) {
       this.setState({
         deleting: false,
         curIndex: curIndex + 1,
         curColor: this.state.color[moduloCurText],
       })
     }
-    setTimeout(this.type, 100)
+    setTimeout(this.type, 200)
   }
 
   render() {
-    return (
-        <p style={{ color: this.state.curColor }}>{this.state.curText}</p>
-    )
+    return <p style={{ color: this.state.curColor }, {display:"inline"}}>{this.state.curText}</p>
   }
-
 }
