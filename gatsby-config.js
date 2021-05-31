@@ -8,7 +8,7 @@ module.exports = {
     description: `All of my thoughts about programming and beyond.`,
     siteUrl: `https://basicblog89788.gatsbyjs.io/`,
     social: {
-      twitter: `none`,
+      github: `anyuan-chen`,
     },
   },
   plugins: [
