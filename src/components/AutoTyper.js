@@ -12,11 +12,11 @@ export default class AutoTyper extends Component {
       deleting: false,
       curIndex: 0,
       color: [
-        "rgba( 74, 77, 105, 50%)",
-        "rgba( 153, 139, 152, 50%)",
-        "rgba( 200, 173, 166, 50%)",
-        "rgba( 241, 233, 227, 50%)",
-        "rgba( 34, 33, 59, 50%)",
+        "rgba( 74, 77, 105, 90%)",
+        "rgba( 153, 139, 152, 90%)",
+        "rgba( 200, 173, 166, 90%)",
+        "rgba( 241, 233, 227, 90%)",
+        "rgba( 34, 33, 59, 90%)",
       ],
     }
   }
@@ -35,7 +35,7 @@ export default class AutoTyper extends Component {
       curText: deleting
         ? currentWord.substring(0, curText.length - 1)
         : currentWord.substring(0, curText.length + 1),
-      typingSpeed: deleting ? 200 : 400,
+      typingSpeed: deleting ? 100 : 200,
     })
 
     if (!deleting && curText.length === currentWord.length) {
@@ -50,7 +50,7 @@ export default class AutoTyper extends Component {
         curColor: this.state.color[moduloCurText],
       })
     }
-    setTimeout(this.type, 400)
+    setTimeout(this.type, 100)
   }
 
   render() {
