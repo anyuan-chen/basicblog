@@ -40,10 +40,9 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <div className={footer}> 
+      <div className={footer}>
         <h6 style={{ display: "inline" }}>
-          Built With {` `}
-          <AutoTyper dataText={footerText}></AutoTyper>
+          <AutoTyper otherText="Built With" dataText={footerText}></AutoTyper>
         </h6>
       </div>
     </div>
