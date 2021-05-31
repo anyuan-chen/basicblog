@@ -1,5 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import {list, nav} from "./layout.module.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -8,9 +9,18 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <div>
+        <h1 className="main-heading">
+          <Link to="/">{title}</Link>
+        </h1>
+        <nav className = {nav}>
+          <ul className={list}>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+          </ul>
+        </nav>
+      </div>
     )
   } else {
     header = (
