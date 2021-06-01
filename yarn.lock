@@ -3761,7 +3761,7 @@
   "resolved" "https://registry.npmjs.org/command-exists/-/command-exists-1.2.9.tgz"
   "version" "1.2.9"
 
-"commander@^2.20.0", "commander@^2.20.3", "commander@^2.8.1":
+"commander@^2.19.0", "commander@^2.20.0", "commander@^2.20.3", "commander@^2.8.1":
   "integrity" "sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ=="
   "resolved" "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz"
   "version" "2.20.3"
@@ -6406,6 +6406,15 @@
     "unist-util-select" "^1.5.0"
     "unist-util-visit-parents" "^2.1.2"
 
+"gatsby-remark-katex@^5.3.0":
+  "integrity" "sha512-KsWEd9m6+e1uKSmSnannIjxaWdYrVdn1Zt0yfRh17gY9qUsR6NkMbHQNbnJuoizMkQ3/fHor78txHRzhowTLBA=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-katex/-/gatsby-remark-katex-5.3.0.tgz"
+  "version" "5.3.0"
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    "remark-math" "^4.0.0"
+    "unist-util-visit" "^2.0.3"
+
 "gatsby-remark-prismjs@^4.2.0":
   "integrity" "sha512-PTE4p/f+XosSt/VdHJr9U3ruZ3yhqtUpqDuifsVbOOsS6AyvmEY/7WPUThRC+nSVfueG1geVgxrWB0AoaUPKXQ=="
   "resolved" "https://registry.npmjs.org/gatsby-remark-prismjs/-/gatsby-remark-prismjs-4.2.0.tgz"
@@ -6515,7 +6524,7 @@
     "semver" "^7.3.4"
     "sharp" "^0.28.0"
 
-"gatsby@^3.4.1":
+"gatsby@^3.0.0-next.0", "gatsby@^3.4.1":
   "integrity" "sha512-LV6D2n7hyXmQyv96yU9kUsbXxzcxa1uN3H2fswi7NbZfSfM9snnoBdTi9s67sArQTw7WQSO8GRtvRm1YTNt84w=="
   "resolved" "https://registry.npmjs.org/gatsby/-/gatsby-3.4.1.tgz"
   "version" "3.4.1"
@@ -8525,6 +8534,13 @@
   "resolved" "https://registry.npmjs.org/junk/-/junk-3.1.0.tgz"
   "version" "3.1.0"
 
+"katex@^0.12.0":
+  "integrity" "sha512-y+8btoc/CK70XqcHqjxiGWBOeIL8upbS0peTPXTvgrh21n1RiWWcIpSWM+4uXq+IAgNh9YYQWdc7LVDPDAEEAg=="
+  "resolved" "https://registry.npmjs.org/katex/-/katex-0.12.0.tgz"
+  "version" "0.12.0"
+  dependencies:
+    "commander" "^2.19.0"
+
 "kebab-hash@^0.1.2":
   "integrity" "sha512-BTZpq3xgISmQmAVzkISy4eUutsUA7s4IEFlCwOBJjvSFOwyR7I+fza+tBc/rzYWK/NrmFHjfU1IhO3lu29Ib/w=="
   "resolved" "https://registry.npmjs.org/kebab-hash/-/kebab-hash-0.1.2.tgz"
@@ -9056,6 +9072,15 @@
   dependencies:
     "unist-util-visit" "^1.0.0"
 
+"mdast-util-math@^0.1.0":
+  "integrity" "sha512-fogAitds+wH+QRas78Yr1TwmQGN4cW/G2WRw5ePuNoJbBSPJCxIOCE8MTzHgWHVSpgkRaPQTgfzXRE1CrwWSlg=="
+  "resolved" "https://registry.npmjs.org/mdast-util-math/-/mdast-util-math-0.1.2.tgz"
+  "version" "0.1.2"
+  dependencies:
+    "longest-streak" "^2.0.0"
+    "mdast-util-to-markdown" "^0.6.0"
+    "repeat-string" "^1.0.0"
+
 "mdast-util-mdx-expression@~0.1.0":
   "integrity" "sha512-SoO8y1B9NjMOYlNdwXMchuTVvqSTlUmXm1P5QvZNPv7OH7aa8qJV+3aA+vl1DHK9Vk1uZAlgwokjvDQhS6bINA=="
   "resolved" "https://registry.npmjs.org/mdast-util-mdx-expression/-/mdast-util-mdx-expression-0.1.1.tgz"
@@ -9259,6 +9284,14 @@
   "integrity" "sha512-jo1OfR4TaEwd5HOrt5+tAZ9mqT4jmpNAusXtyfNzqVm9uiSYFZlKM1wYL4oU7azZW/PxQW53wM0S6OR1JHNa2g=="
   "resolved" "https://registry.npmjs.org/microevent.ts/-/microevent.ts-0.1.1.tgz"
   "version" "0.1.1"
+
+"micromark-extension-math@^0.1.0":
+  "integrity" "sha512-ZJXsT2eVPM8VTmcw0CPSDeyonOn9SziGK3Z+nkf9Vb6xMPeU+4JMEnO6vzDL10562Favw8Vste74f54rxJ/i6Q=="
+  "resolved" "https://registry.npmjs.org/micromark-extension-math/-/micromark-extension-math-0.1.2.tgz"
+  "version" "0.1.2"
+  dependencies:
+    "katex" "^0.12.0"
+    "micromark" "~2.11.0"
 
 "micromark-extension-mdx-expression@^0.3.0", "micromark-extension-mdx-expression@^0.3.2", "micromark-extension-mdx-expression@~0.3.0":
   "integrity" "sha512-Sh8YHLSAlbm/7TZkVKEC4wDcJE8XhVpZ9hUXBue1TcAicrrzs/oXu7PHH3NcyMemjGyMkiVS34Y0AHC5KG3y4A=="
@@ -11692,6 +11725,14 @@
   dependencies:
     "jsesc" "~0.5.0"
 
+"remark-math@^4.0.0":
+  "integrity" "sha512-lH7SoQenXtQrvL0bm+mjZbvOk//YWNuyR+MxV18Qyv8rgFmMEGNuB0TSCQDkoDaiJ40FCnG8lxErc/zhcedYbw=="
+  "resolved" "https://registry.npmjs.org/remark-math/-/remark-math-4.0.0.tgz"
+  "version" "4.0.0"
+  dependencies:
+    "mdast-util-math" "^0.1.0"
+    "micromark-extension-math" "^0.1.0"
+
 "remark-mdx@^2.0.0-next.4":
   "integrity" "sha512-I5dCKP5VE18SMd5ycIeeEk8Hl6oaldUY6PIvjrfm65l7d0QRnLqknb62O2g3QEmOxCswcHTtwITtz6rfUIVs+A=="
   "resolved" "https://registry.npmjs.org/remark-mdx/-/remark-mdx-2.0.0-next.9.tgz"
@@ -13890,7 +13931,7 @@
   dependencies:
     "unist-util-visit-parents" "^2.0.0"
 
-"unist-util-visit@^2.0.0", "unist-util-visit@^2.0.2":
+"unist-util-visit@^2.0.0", "unist-util-visit@^2.0.2", "unist-util-visit@^2.0.3":
   "integrity" "sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q=="
   "resolved" "https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-2.0.3.tgz"
   "version" "2.0.3"
