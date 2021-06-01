@@ -6,7 +6,7 @@ module.exports = {
       summary: `studying in Richmond Hill and building interesting things.`,
     },
     description: `All of my thoughts about programming and beyond.`,
-    siteUrl: ``,
+    siteUrl: `https://blog.andrewchen.tech/`,
     social: {
       github: `anyuan-chen`,
     },
