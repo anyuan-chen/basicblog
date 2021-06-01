@@ -10,4 +10,4 @@ Bit Sum is a problem found on the online judge Binary Search, avaialable at the 
 
 
 
-In this problem, we're asked to find the lowest possible sum after changing $n$ bits. 
+In this problem, we're asked to find the lowest possible sum after changing $n$ bits.  lmfao 

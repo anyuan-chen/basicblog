@@ -6,7 +6,7 @@ module.exports = {
       summary: `studying in Richmond Hill and building interesting things.`,
     },
     description: `All of my thoughts about programming and beyond.`,
-    siteUrl: `https://basicblog89788.gatsbyjs.io/`,
+    siteUrl: ``,
     social: {
       github: `anyuan-chen`,
     },
