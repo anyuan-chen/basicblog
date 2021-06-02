@@ -11,6 +11,7 @@ const AboutMe = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title="About Me" />
+      <h3>Comeptitive Programming Links</h3>
       <SocialTiles></SocialTiles>
       <Bio></Bio>
     </Layout>
