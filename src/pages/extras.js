@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+
 const Extras = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   return (
